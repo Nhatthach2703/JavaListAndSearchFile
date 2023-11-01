@@ -78,7 +78,7 @@ public class FileDAO {
 
     public void findFileNameByWord() {
         path = l.getString("Enter Path: ");
-        word = l.checkInputPathFile("Enter Word: ");
+        word = l.getString("Enter Word: ");
         File folder = new File(path);
         File[] listOfFiles = folder.listFiles();
 
